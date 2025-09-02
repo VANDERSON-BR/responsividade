@@ -2,9 +2,11 @@
 
 :root{
     --cor-destaque: #C92071;
+    --cor-branca: white;
+    --cor-preta: #1F1F1F;
+    --cor--cinza: #474747;
 
-
-    --bg-main: rgba(86, 48, 142, 0.626);
+    --bg-main: linear-gradient(#B5B4F2 , #EFEFFF);
 }
 
 *{
@@ -42,7 +44,33 @@ header{
 }
 
 main{
-    height: 800px;
-    bottom: 0.5px;
 
+    background: var(--bg-main);
+    padding: 63px 30px 80px 30px;
+    
+    form{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid black;
+        border-radius: 12px;
+        width: 315px;
+        height: 572px;
+        background: var(--cor-branca);
+        padding: 30px;
+    
+            .text{
+
+                box-sizing: border-box;
+                text-align: center;
+                margin-bottom: 40px;
+                
+                h1{
+                    font-size: 22.5px;
+                    line-height: 34px;
+                    letter-spacing: 2px;
+                }
+            }
+        }
 }
